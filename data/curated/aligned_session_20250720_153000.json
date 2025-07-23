@@ -1,0 +1,45 @@
+{
+    "schema_version": "1.0",
+    "episode_id": "session_20250720_153000",
+    "session_info": {
+        "start_time_utc": "2025-07-20T23:14:03.337Z",
+        "end_time_utc": "2025-07-20T23:14:03.337Z"
+    },
+    "task_context": {
+        "goal": "Testing the ingestion pipeline.",
+        "language_prompt": "Robot, this is a test of the data processing system.",
+        "user_intent": "System diagnostics and validation.",
+        "structured_prompt": {
+            "action": "retrieve",
+            "object": {
+                "name": "block",
+                "attributes": [
+                    "red"
+                ]
+            },
+            "source_location": "table"
+        }
+    },
+    "sensor_data": [
+        {
+            "modality": "video",
+            "source_id": "front_cam_SN12345",
+            "file_path": "/mnt/d/Users/OLoca/PycharmProjects/Project_Multimodal/data/processed/session_20250720_153000/normalized_sample_video.mp4",
+            "uncertainty": {
+                "spatial_uncertainty": 0.0574,
+                "temporal_uncertainty": 0.008
+            }
+        },
+        {
+            "modality": "audio",
+            "source_id": "microphone_SN67890",
+            "file_path": "/mnt/d/Users/OLoca/PycharmProjects/Project_Multimodal/data/processed/session_20250720_153000/normalized_sample_audio.wav",
+            "uncertainty": {
+                "spatial_uncertainty": 0.0393,
+                "temporal_uncertainty": 0.0307
+            }
+        }
+    ],
+    "cross_modality_tags": [],
+    "is_gold_standard": true
+}

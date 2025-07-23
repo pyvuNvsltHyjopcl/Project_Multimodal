@@ -1,0 +1,62 @@
+{
+    "schema_version": "1.0",
+    "episode_id": "robot01_20250720_145643",
+    "session_info": {
+        "start_time_utc": "2025-07-20T21:56:43.123Z",
+        "end_time_utc": "2025-07-20T21:58:01.456Z"
+    },
+    "task_context": {
+        "goal": "Pick up the red block from the table.",
+        "language_prompt": "Robot, please get the red block.",
+        "user_intent": "Object retrieval from a surface."
+    },
+    "sensor_data": [
+        {
+            "modality": "video",
+            "source_id": "front_cam_SN12345",
+            "file_path": "path/to/episode_data/video_front.mp4",
+            "calibration_info": {
+                "type": "camera_intrinsics",
+                "resolution": [
+                    1920,
+                    1080
+                ],
+                "fx": 525.0,
+                "fy": 525.0,
+                "cx": 960.0,
+                "cy": 540.0
+            }
+        },
+        {
+            "modality": "imu",
+            "source_id": "imu_bosch_SN9876",
+            "file_path": "path/to/episode_data/imu_data.csv",
+            "calibration_info": {
+                "type": "imu_bias",
+                "accel_bias": [
+                    0.01,
+                    -0.005,
+                    0.02
+                ],
+                "gyro_bias": [
+                    0.001,
+                    0.001,
+                    -0.002
+                ]
+            }
+        }
+    ],
+    "cross_modality_tags": [
+        {
+            "tag_id": "grasp_action_001",
+            "start_time": "2025-07-20T21:57:10.500Z",
+            "end_time": "2025-07-20T21:57:12.800Z",
+            "description": "Robot arm extends and grasps the red block.",
+            "modalities": [
+                "video",
+                "imu",
+                "joint_states"
+            ]
+        }
+    ]
+}
